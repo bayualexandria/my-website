@@ -1,0 +1,23 @@
+/* Navbar */
+.img-circle {
+	border-radius: 50%;
+}
+
+.navbar img {
+	width: 40px;
+	border: 1px solid #eaeaea;
+}
+
+/* Jumbotron */
+.img-circle {
+	border-radius: 50%
+}
+
+#home img {
+	width: 200px;
+	border: 5px solid #eaeaea;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+	margin-top: 3rem;
+
+
+}
