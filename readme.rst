@@ -10,4 +10,11 @@ materi dan blog yang bisa ditambahkan, edit maupun hapus (CRUD) pada halaman adm
 Hasil Hosting
 *******************
 
-`b4yu4lex@ndr!4 <http://bayuwardana.getenjoyment.net/>`_
+`b@yu4lex@ndr!4 <http://bayuwardana.getenjoyment.net/>`_
+
+*******************
+URL
+*******************
+Website `http://bayuwardana.getenjoyment.net/ <http://bayuwardana.getenjoyment.net/>`_
+Admin `http://bayuwardana.getenjoyment.net/login <http://bayuwardana.getenjoyment.net/login>`_
+Rest API `http://bayuwardana.getenjoyment.net/developer/Blog/index?key=b@yu4lex@ndr!4 <http://bayuwardana.getenjoyment.net/developer/Blog/index?key=b@yu4lex@ndr!4>`_
