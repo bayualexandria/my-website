@@ -75,6 +75,7 @@ class Blog_model extends CI_Model
     public function Blogs($id = null)
     {
         if ($id == null) {
+
             $query = "SELECT `blog`.*,`category`.`kategori` FROM `blog` JOIN `category` ON `blog`.`id_category`=`category`.`id`";
         } else {
             $query = "SELECT `blog`.*,`category`.`kategori` FROM `blog` JOIN `category` ON `blog`.`id_category`=`category`.`id` WHERE `id_blog`=$id";
@@ -133,6 +134,7 @@ class Blog_model extends CI_Model
 
         return $this->db->get('blog', $limit, $start)->result_array();
     }
+
 
     public function countAllBlogs()
     {

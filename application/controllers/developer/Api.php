@@ -10,12 +10,16 @@ class Api extends RestController
         // Construct the parent class
         parent::__construct();
         // $this->methods['users_get']['limit'] = 3;
+        // $config['users_get']['dashboard']['*'] = 'basic';
+        // $config['users_post']['dashboard']['*'] = 'basic';
+        // $config['users_put']['dashboard']['*'] = 'basic';
+        // $config['users_delete']['dashboard']['*'] = 'basic';
     }
 
     public function users_get()
     {
-        $random = bin2hex(random_bytes(8));
-        var_dump($random);
+        // $random = bin2hex(random_bytes(8));
+        // var_dump($random);
         $id = $this->get('id');
         if ($id === null) {
             $users = $this->db->get('user')->result_array();
@@ -67,7 +71,7 @@ class Api extends RestController
             'name' => $this->post('name'),
             'email' => $this->post('email'),
             'image' => 'default.png',
-            'password' => $this->post('password'),
+            'password' => password_hash($this->post('password'), PASSWORD_DEFAULT),
             'role_id' => 1,
             'is_active' => 1,
             'date_created' => time()
@@ -88,7 +92,7 @@ class Api extends RestController
         }
     }
 
-    public function users_put()
+    public function users_patch()
     {
         $id = $this->put('id');
         $data = [

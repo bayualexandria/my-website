@@ -9,6 +9,7 @@ class Blog extends RestController
     {
         parent::__construct();
         $this->load->model('Blog_model', 'Blog');
+        $config['index_get']['accounts']['user'] = 'basic';
     }
 
     public function index_get()
@@ -23,12 +24,16 @@ class Blog extends RestController
 
             $blog = $this->Blog->Blogs($id);
         }
-
-        if ($blog) {
+        $data = [
+            {
+                
+            }
+        ];
+        if ($data) {
 
             $this->response([
                 'status' => TRUE,
-                'data' => $blog
+                'data' => $data
             ], RestController::HTTP_OK);
         } else {
 
