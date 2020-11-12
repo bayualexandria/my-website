@@ -24,16 +24,12 @@ class Blog extends RestController
 
             $blog = $this->Blog->Blogs($id);
         }
-        $data = [
-            {
-                
-            }
-        ];
-        if ($data) {
+        
+        if ($blog) {
 
             $this->response([
                 'status' => TRUE,
-                'data' => $data
+                'data' => $blog
             ], RestController::HTTP_OK);
         } else {
 
